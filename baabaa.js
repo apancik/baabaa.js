@@ -15,7 +15,7 @@ var baabaa = (function (document) {
     }
 
     function getCookie(name) {
-        var cookieName = cookieNamespace + name;
+        var cookieName = encodeURIComponent(cookieNamespace + name);
 
         var cookies = document.cookie.split("; ");
 
